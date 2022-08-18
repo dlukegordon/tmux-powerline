@@ -12,7 +12,7 @@ else
 	TMUX_POWERLINE_SEPARATOR_RIGHT_THIN="❯"
 fi
 
-TMUX_POWERLINE_DEFAULT_BACKGROUND_COLOR=${TMUX_POWERLINE_DEFAULT_BACKGROUND_COLOR:-'235'}
+TMUX_POWERLINE_DEFAULT_BACKGROUND_COLOR=${TMUX_POWERLINE_DEFAULT_BACKGROUND_COLOR:-'232'}
 TMUX_POWERLINE_DEFAULT_FOREGROUND_COLOR=${TMUX_POWERLINE_DEFAULT_FOREGROUND_COLOR:-'136'}
 
 TMUX_POWERLINE_DEFAULT_LEFTSIDE_SEPARATOR=${TMUX_POWERLINE_DEFAULT_LEFTSIDE_SEPARATOR:-$TMUX_POWERLINE_SEPARATOR_RIGHT_BOLD}
@@ -23,24 +23,24 @@ TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SEPARATOR=${TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SE
 
 if [ -z $TMUX_POWERLINE_WINDOW_STATUS_CURRENT ]; then
 	TMUX_POWERLINE_WINDOW_STATUS_CURRENT=(
-		"#[fg=colour136,bg=colour234,nobold,noitalics,nounderscore]" \
+		"#[fg=colour15,bg=colour235,nobold,noitalics,nounderscore]" \
 		" #I#F " \
-		" #W " \
-		"#[fg=colour136,bg=colour235,nobold,noitalics,nounderscore]" \
+		"#W " \
+		"#[fg=colour252,bg=colour233,nobold,noitalics,nounderscore]" \
 	)
 fi
 
 if [ -z $TMUX_POWERLINE_WINDOW_STATUS_STYLE ]; then
 	TMUX_POWERLINE_WINDOW_STATUS_STYLE=(
-		"fg=colour136,bg=colour235,nobold,noitalics,nounderscore"
+		"fg=colour252,bg=colour233,nobold,noitalics,nounderscore"
 	)
 fi
 
 if [ -z $TMUX_POWERLINE_WINDOW_STATUS_FORMAT ]; then
 	TMUX_POWERLINE_WINDOW_STATUS_FORMAT=(
-		"#[fg=colour136,bg=colour235,nobold,noitalics,nounderscore]" \
+		"#[fg=colour252,bg=colour233,nobold,noitalics,nounderscore]" \
 		"  #I#{?window_flags,#F, } " \
-		" #W "
+		"#W "
 	)
 fi
 
@@ -48,14 +48,14 @@ fi
 
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
-		"tmux_session_info 235 136" \
+		"tmux_session_info 232 252" \
 		# "hostname 33 0" \
 		#"ifstat 30 255" \
 		#"ifstat_sys 30 255" \
 		# "lan_ip 24 255 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
 		# "wan_ip 24 255" \
-		"pwd 235 136" \
-		"vcs_branch 235 136" \
+		"pwd 232 252" \
+		"vcs_branch 232 252" \
 		#"vcs_compare 60 255" \
 		#"vcs_staged 64 255" \
 		#"vcs_modified 9 255" \
@@ -78,8 +78,8 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 		#"rainbarf 0 ${TMUX_POWERLINE_DEFAULT_FOREGROUND_COLOR}" \
 		#"xkb_layout 125 117" \
 		# "date_day 235 136" \
-		"date 235 136" \
-		"time 235 136" \
+		"date 232 252" \
+		"time 232 252" \
 		#"utc_time 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
 	)
 fi

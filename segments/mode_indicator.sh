@@ -3,14 +3,14 @@
 prefix_pressed_text="PREFIX"
 # insert_mode_text="INSERT"
 insert_mode_text=""
-copy_mode_text=":COPY"
-normal_mode_text="NORMAL"
+copy_mode_text=": COPY"
+normal_mode_text="NORMAL "
 separator=""
 
 prefix_mode_fg="colour226"
 normal_mode_fg="colour139"
 copy_mode_fg="colour82"
-bg="colour235"
+bg="colour232"
 
 run_segment() {
         prefix_indicator="#[bg=${bg}]#{?client_prefix,#[fg=${prefix_mode_fg}]${prefix_pressed_text},#[fg=${normal_mode_fg}]${normal_mode_text}}"
